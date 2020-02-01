@@ -2,14 +2,14 @@
 
 ## Run locally
 
-- php -S localhost:8000
+- `php -S localhost:8000`
 
 ## Assumptions
 
 - I won't be judged for my lack of php knowledge
 - Only latest version of Chrome needs to be supported
 - Keep toggle on refresh
-- `mark` never has more than 2 decimal places
+- `mark` can be parsed as a float
 
 ## Task
 
