@@ -8,7 +8,7 @@ $json = json_decode($response);
 $reviews = $json->response->data->shop->reviews;
 
 function sortByMarkDescending($a, $b) {
-  return $b->mark - $a->mark;
+  return floatval($b->mark) - floatval($a->mark);
 }
 usort($reviews, 'sortByMarkDescending');
 ?>
