@@ -11,12 +11,20 @@ function sortByMarkDescending($a, $b) {
   return $b->mark - $a->mark;
 }
 usort($reviews, 'sortByMarkDescending');
-
-foreach ($reviews as $review) {
-  echo ' ';
-  echo $review->mark;
-}
 ?>
+
+<table>
+  <tr>
+    <td>Mark</td>
+    <td>Comment</td>
+  </tr>
+  <?php foreach ($reviews as $review) : ?>
+  <tr>
+    <td><?php echo $review->mark; ?></td>
+    <td><?php echo $review->comment; ?></td>
+  </tr>
+  <?php endforeach; ?>
+</table>
 
 </body>
 </html>
